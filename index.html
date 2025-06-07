@@ -8,32 +8,60 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="libs/bootstrap-5.3.6/css/bootstrap.min.css">
+    <!-- Bootstrap Icons (local) -->
+    <link rel="stylesheet" href="libs/bootstrap-5.3.6/icons/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="libs/master/style.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg
-                    class="bi me-2" width="40" height="32" aria-hidden="true">
-                    <use xlink:href="#bootstrap"></use>
-                </svg> <span class="fs-4">Gagine</span> </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    <div class="d-flex">
+        <!-- Sidebar: visível em todas as telas, colapsada por padrão em < md -->
+        <nav class="sidebar d-flex flex-column flex-shrink-0 p-3 text-bg-dark" id="sidebar">
+            <a href="/" class="d-flex align-items-center mb-3 text-white text-decoration-none">
+                <i class="bi bi-bootstrap-fill pe-none me-2" style="font-size: 1.8rem;"></i>
+                <span class="fs-4 brand-text">Gagine</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active d-flex align-items-center gap-2" aria-current="page">
+                        <i class="bi bi-house-door"></i>
+                        <span class="link-text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white d-flex align-items-center gap-2">
+                        <i class="bi bi-speedometer2"></i>
+                        <span class="link-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white d-flex align-items-center gap-2">
+                        <i class="bi bi-grid"></i>
+                        <span class="link-text">Apps</span>
+                    </a>
+                </li>
             </ul>
-        </header>
-    </div>
-    <div class="container mt-5">
-        <h1 class="text-primary">TESTE</h1>
-        <p>Testando. 🎉</p>
-        <button class="btn btn-success">Clique aqui</button>
+
+            <!-- Botão de toggle (seta) -->
+            <button id="btn-toggle" class="text-center">
+                <i class="bi bi-chevron-left" id="toggle-icon"></i>
+            </button>
+        </nav>
+
+        <!-- Main content -->
+        <main class="flex-grow-1 p-4">
+            <h1>Bem-vindo ao meu site!</h1>
+            <p>Este é o conteúdo principal. Substitua por aquilo que desejar mostrar ao lado da sidebar.</p>
+        </main>
     </div>
 
     <!-- Bootstrap JS -->
     <script src="libs/bootstrap-5.3.6/js/bootstrap.bundle.min.js"></script>
+
+    <script src="libs/master/script.js"></script>
 </body>
 
 </html>
